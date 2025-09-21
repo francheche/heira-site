@@ -1,5 +1,5 @@
 
-export default function HeiraHomepage() {
+export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
       {/* Header */}
