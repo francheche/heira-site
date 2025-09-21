@@ -1,26 +1,40 @@
-export default function App() {
+export default function HeiraHomepage() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
-      {/* Top Banner Logo */}
-      <div className="w-full bg-white border-b">
-        <div className="mx-auto max-w-6xl px-4 py-6 flex justify-center">
-          <img src="/top-logo.png" alt="Heira Services main logo" className="h-16 md:h-20 object-contain" />
-        </div>
-      </div>
+    {/* Header */}
+<header className="sticky top-0 z-40 backdrop-blur bg-white/80 border-b">
+  <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+    {/* Logo + name */}
+    <div className="flex items-center gap-3">
+      <img
+        src="top-logo.jpg"         // <-- put your image file in public/ as my-logo.jpg
+        alt="Heira Services logo"
+        className="h-12 w-auto object-contain"
+      />
+      <span className="font-semibold text-xl text-gray-900 hidden sm:inline">
+        Heira Services
+      </span>
+    </div>
 
-      {/* Header (nav + CTA) */}
-      <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b">
-        <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-          <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a href="#why" className="hover:text-emerald-700">Why Us</a>
-            <a href="#services" className="hover:text-emerald-700">Services</a>
-            <a href="#about" className="hover:text-emerald-700">About</a>
-            <a href="#certs" className="hover:text-emerald-700">Certifications</a>
-            <a href="#contact" className="hover:text-emerald-700">Contact</a>
-          </nav>
-          <a href="#contact" className="ml-4 inline-flex items-center rounded-2xl bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700 transition">Book a Free Consultation</a>
-        </div>
-      </header>
+    {/* Nav */}
+    <nav className="hidden md:flex items-center gap-6 text-sm">
+      <a href="#why" className="hover:text-emerald-700">Why Us</a>
+      <a href="#services" className="hover:text-emerald-700">Services</a>
+      <a href="#about" className="hover:text-emerald-700">About</a>
+      <a href="#certs" className="hover:text-emerald-700">Certifications</a>
+      <a href="#contact" className="hover:text-emerald-700">Contact</a>
+    </nav>
+
+    {/* CTA */}
+    <a
+      href="#contact"
+      className="ml-4 inline-flex items-center rounded-2xl bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700 transition"
+    >
+      Book a Free Consultation
+    </a>
+  </div>
+</header>
+
 
       {/* Hero */}
       <section className="relative overflow-hidden">
@@ -163,7 +177,7 @@ export default function App() {
         <div className="mx-auto max-w-6xl px-4 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Contact us</h2>
           <p className="mt-2 text-gray-600">We reply within 24 hours. Or message us on WhatsApp/Facebook.</p>
-          <form className="mt-8 grid md:grid-cols-2 gap-6" onSubmit={(e)=>e.preventDefault()}>
+          <form className="mt-8 grid md:grid-cols-2 gap-6">
             <Input label="Full name" placeholder="Jane Doe" />
             <Input label="Email" placeholder="you@company.com" type="email" />
             <Input label="Company" placeholder="Company or brand" />
@@ -173,7 +187,7 @@ export default function App() {
               <textarea className="w-full rounded-2xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-600 min-h-[120px]" placeholder="E.g., inbox management, customer support, social media, e‑commerce ops"></textarea>
             </div>
             <div className="md:col-span-2">
-              <button type="submit" className="inline-flex items-center rounded-2xl bg-emerald-600 px-5 py-3 text-white font-medium hover:bg-emerald-700">Send inquiry</button>
+              <button type="button" className="inline-flex items-center rounded-2xl bg-emerald-600 px-5 py-3 text-white font-medium hover:bg-emerald-700">Send inquiry</button>
             </div>
           </form>
         </div>
@@ -196,7 +210,7 @@ export default function App() {
           </div>
           <div>
             <div className="font-semibold text-gray-800">Contact</div>
-            <p className="mt-2">heiraservices.com · <a href="mailto:hello@heiraservices.com" className="underline">hello@heiraservices.com</a></p>
+            <p className="mt-2">heiraservices.com · hello@heiraservices.com</p>
           </div>
         </div>
       </footer>
