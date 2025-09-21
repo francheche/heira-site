@@ -7,12 +7,12 @@ export default function HeiraHomepage() {
     {/* Logo + name */}
     <div className="flex items-center gap-3">
       <img
-        src="top-logo.jpg"         // <-- put your image file in public/ as my-logo.jpg
+        src="top-logo.png"         // <-- put your image file in public/ as my-logo.jpg
         alt="Heira Services logo"
         className="h-12 w-auto object-contain"
       />
       <span className="font-semibold text-xl text-gray-900 hidden sm:inline">
-        Heira Services
+
       </span>
     </div>
 
@@ -49,20 +49,20 @@ export default function HeiraHomepage() {
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
-                href="https://heira-site.onrender.com/#why"
+                href="https://heira-site.onrender.com/#how"
                 className="inline-flex items-center rounded-2xl bg-emerald-600 px-5 py-3 text-white font-medium hover:bg-emerald-700 transition"
               >
                 Start in 3 Steps
               </a>
               <a
-                href="#how"
+                href="https://heira-site.onrender.com/#how"
                 className="inline-flex items-center rounded-2xl border px-5 py-3 font-medium hover:bg-gray-50 transition"
               >
                 How it Works
               </a>
             </div>
             <div className="mt-6 text-sm text-gray-500">
-              Average response time: <span className="font-medium text-gray-700">under 12 hours</span>
+              Average response time: <span className="font-medium text-gray-700">under 24 hours</span>
             </div>
           </div>
           <div className="relative">
@@ -78,6 +78,7 @@ export default function HeiraHomepage() {
           </div>
         </div>
       </section>
+
       {/* Why Choose Us */}
       <section id="why" className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-semibold">Why choose Heira</h2>
