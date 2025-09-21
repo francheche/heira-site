@@ -1,13 +1,16 @@
-export default function HeiraHomepage() {
+export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
-      {/* Header */}
+      {/* Top Banner Logo */}
+      <div className="w-full bg-white border-b">
+        <div className="mx-auto max-w-6xl px-4 py-6 flex justify-center">
+          <img src="/top-logo.png" alt="Heira Services main logo" className="h-16 md:h-20 object-contain" />
+        </div>
+      </div>
+
+      {/* Header (nav + CTA) */}
       <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b">
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-xl bg-emerald-600" />
-            <span className="font-semibold text-xl">Heira Services</span>
-          </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a href="#why" className="hover:text-emerald-700">Why Us</a>
             <a href="#services" className="hover:text-emerald-700">Services</a>
@@ -160,7 +163,7 @@ export default function HeiraHomepage() {
         <div className="mx-auto max-w-6xl px-4 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Contact us</h2>
           <p className="mt-2 text-gray-600">We reply within 24 hours. Or message us on WhatsApp/Facebook.</p>
-          <form className="mt-8 grid md:grid-cols-2 gap-6">
+          <form className="mt-8 grid md:grid-cols-2 gap-6" onSubmit={(e)=>e.preventDefault()}>
             <Input label="Full name" placeholder="Jane Doe" />
             <Input label="Email" placeholder="you@company.com" type="email" />
             <Input label="Company" placeholder="Company or brand" />
@@ -170,7 +173,7 @@ export default function HeiraHomepage() {
               <textarea className="w-full rounded-2xl border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-600 min-h-[120px]" placeholder="E.g., inbox management, customer support, social media, e‑commerce ops"></textarea>
             </div>
             <div className="md:col-span-2">
-              <button type="button" className="inline-flex items-center rounded-2xl bg-emerald-600 px-5 py-3 text-white font-medium hover:bg-emerald-700">Send inquiry</button>
+              <button type="submit" className="inline-flex items-center rounded-2xl bg-emerald-600 px-5 py-3 text-white font-medium hover:bg-emerald-700">Send inquiry</button>
             </div>
           </form>
         </div>
@@ -193,7 +196,7 @@ export default function HeiraHomepage() {
           </div>
           <div>
             <div className="font-semibold text-gray-800">Contact</div>
-            <p className="mt-2">heiraservices.com · hello@heiraservices.com</p>
+            <p className="mt-2">heiraservices.com · <a href="mailto:hello@heiraservices.com" className="underline">hello@heiraservices.com</a></p>
           </div>
         </div>
       </footer>
