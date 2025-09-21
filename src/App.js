@@ -1,4 +1,24 @@
 export default function HeiraHomepage() {
+  
+   const handleSubmit = (e) => {
+    e.preventDefault();
+    // For now, send form data to Formspree (replace with your endpoint)
+    const form = e.target;
+    fetch("https://formspree.io/f/mvgwpkgq", {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" },
+    }).then((res) => {
+      if (res.ok) {
+        alert("✅ Thank you! We will get back to you soon.");
+        form.reset();
+      } else {
+        alert("❌ Something went wrong. Please try again later.");
+      }
+    });
+  };
+  
+  
   return (
     <div className="min-h-screen bg-white text-gray-800">
     {/* Header */}
