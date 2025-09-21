@@ -36,7 +36,7 @@ export default function HeiraHomepage() {
 </header>
 
 
-      {/* Hero */}
+     {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 to-white" />
         <div className="relative mx-auto max-w-6xl px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
@@ -48,10 +48,22 @@ export default function HeiraHomepage() {
               Philippines-based, certificate-backed VAs helping owners, startups, and agencies save time and scale.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="#contact" className="inline-flex items-center rounded-2xl bg-emerald-600 px-5 py-3 text-white font-medium hover:bg-emerald-700 transition">Start in 3 Steps</a>
-              <a href="#how" className="inline-flex items-center rounded-2xl border px-5 py-3 font-medium hover:bg-gray-50 transition">How it Works</a>
+              <a
+                href="https://heira-site.onrender.com/#why"
+                className="inline-flex items-center rounded-2xl bg-emerald-600 px-5 py-3 text-white font-medium hover:bg-emerald-700 transition"
+              >
+                Start in 3 Steps
+              </a>
+              <a
+                href="#how"
+                className="inline-flex items-center rounded-2xl border px-5 py-3 font-medium hover:bg-gray-50 transition"
+              >
+                How it Works
+              </a>
             </div>
-            <div className="mt-6 text-sm text-gray-500">Average response time: <span className="font-medium text-gray-700">under 24 hours</span></div>
+            <div className="mt-6 text-sm text-gray-500">
+              Average response time: <span className="font-medium text-gray-700">under 12 hours</span>
+            </div>
           </div>
           <div className="relative">
             <div className="aspect-video w-full rounded-2xl border shadow-sm bg-white grid place-items-center">
@@ -66,7 +78,6 @@ export default function HeiraHomepage() {
           </div>
         </div>
       </section>
-
       {/* Why Choose Us */}
       <section id="why" className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-semibold">Why choose Heira</h2>
