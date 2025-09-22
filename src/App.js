@@ -149,11 +149,23 @@ export default function HeiraHomepage() {
               <li className="flex items-start gap-2"><Check /> Data privacy and NDA on request</li>
             </ul>
           </div>
-          <div className="rounded-2xl border p-6 bg-white shadow-sm">
-            <div className="aspect-video rounded-xl bg-gray-100 grid place-items-center text-gray-400">Team photo / collage placeholder</div>
-            <p className="mt-3 text-sm text-gray-500">Show smiling faces with first names to build trust.</p>
-          </div>
-        </div>
+         <div className="aspect-video w-full rounded-2xl border shadow-sm bg-black overflow-hidden">
+  <video
+    src="/intro.mp4"
+    poster="/intro-poster.jpg"
+    className="h-full w-full object-cover"
+    controls
+    playsInline
+    preload="metadata"
+  >
+    {/* Optional: provide multiple sources for wider browser support */}
+    {/* <source src="/intro.webm" type="video/webm" /> */}
+    {/* <source src="/intro.mp4" type="video/mp4" /> */}
+    {/* Optional captions for accessibility */}
+    {/* <track kind="captions" src="/intro-captions.vtt" srcLang="en" label="English" default /> */}
+  </video>
+</div>
+
       </section>
 
       {/* Certifications */}
