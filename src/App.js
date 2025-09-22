@@ -109,7 +109,7 @@ export default function HeiraHomepage() {
     {/* <track kind="captions" src="/intro-captions.vtt" srcLang="en" label="English" default /> */}
   </video>
 </div>
-
+</div>
       </section>
 
       {/* Why Choose Us */}
