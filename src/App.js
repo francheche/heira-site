@@ -93,18 +93,23 @@ export default function HeiraHomepage() {
               Average response time: <span className="font-medium text-gray-700">under 24 hours</span>
             </div>
           </div>
-          <div className="relative">
-            <div className="aspect-video w-full rounded-2xl border shadow-sm bg-white grid place-items-center">
-              <div className="text-center px-8">
-                <div className="mx-auto mb-4 h-14 w-14 rounded-full border grid place-items-center">
-                  <svg viewBox="0 0 24 24" className="h-6 w-6"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
-                </div>
-                <p className="font-medium">(Optional) 45s intro video</p>
-                <p className="text-sm text-gray-500">Introduce Heira, what you do, and the outcomes you deliver.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+         <div className="aspect-video w-full rounded-2xl border shadow-sm bg-black overflow-hidden">
+  <video
+    src="/intro.mp4"
+    poster="/intro-poster.jpg"
+    className="h-full w-full object-cover"
+    controls
+    playsInline
+    preload="metadata"
+  >
+    {/* Optional: provide multiple sources for wider browser support */}
+    {/* <source src="/intro.webm" type="video/webm" /> */}
+    {/* <source src="/intro.mp4" type="video/mp4" /> */}
+    {/* Optional captions for accessibility */}
+    {/* <track kind="captions" src="/intro-captions.vtt" srcLang="en" label="English" default /> */}
+  </video>
+</div>
+
       </section>
 
       {/* Why Choose Us */}
@@ -149,23 +154,11 @@ export default function HeiraHomepage() {
               <li className="flex items-start gap-2"><Check /> Data privacy and NDA on request</li>
             </ul>
           </div>
-         <div className="aspect-video w-full rounded-2xl border shadow-sm bg-black overflow-hidden">
-  <video
-    src="/intro.mp4"
-    poster="/intro-poster.jpg"
-    className="h-full w-full object-cover"
-    controls
-    playsInline
-    preload="metadata"
-  >
-    {/* Optional: provide multiple sources for wider browser support */}
-    {/* <source src="/intro.webm" type="video/webm" /> */}
-    {/* <source src="/intro.mp4" type="video/mp4" /> */}
-    {/* Optional captions for accessibility */}
-    {/* <track kind="captions" src="/intro-captions.vtt" srcLang="en" label="English" default /> */}
-  </video>
-</div>
-
+          <div className="rounded-2xl border p-6 bg-white shadow-sm">
+            <div className="aspect-video rounded-xl bg-gray-100 grid place-items-center text-gray-400">Team photo / collage placeholder</div>
+            <p className="mt-3 text-sm text-gray-500">Show smiling faces with first names to build trust.</p>
+          </div>
+        </div>
       </section>
 
       {/* Certifications */}
