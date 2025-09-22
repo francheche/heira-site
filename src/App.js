@@ -94,20 +94,17 @@ export default function HeiraHomepage() {
             </div>
           </div>
          <div className="aspect-video w-full rounded-2xl border shadow-sm bg-black overflow-hidden">
-  <video
-    src="/intro.mp4"
-    poster="/intro-poster.jpg"
-    className="h-full w-full object-cover"
-    controls
-    playsInline
-    preload="metadata"
-  >
-    {/* Optional: provide multiple sources for wider browser support */}
-    {/* <source src="/intro.webm" type="video/webm" /> */}
-    {/* <source src="/intro.mp4" type="video/mp4" /> */}
-    {/* Optional captions for accessibility */}
-    {/* <track kind="captions" src="/intro-captions.vtt" srcLang="en" label="English" default /> */}
-  </video>
+ <video
+  src="/intro.mp4"
+  poster="/intro-poster.png"
+  className="h-full w-full object-cover"
+  autoPlay
+  muted
+  playsInline
+  loop   // optional, repeats forever
+>
+  <source src="/intro.mp4" type="video/mp4" />
+</video>
 </div>
 </div>
       </section>
