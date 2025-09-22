@@ -99,7 +99,7 @@ export default function HeiraHomepage() {
   poster="/intro-poster.png"
   className="h-full w-full object-cover"
   autoPlay
-  muted
+  unmuted
   playsInline
   loop   // optional, repeats forever
 >
